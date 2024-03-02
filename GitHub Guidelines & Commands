@@ -1,0 +1,31 @@
+===>>> First Open folder which you want to upload in GitHub, then open CMD using SHIFT+RIGHT KEY and click on GitBash 
+
+
+===>>> Commands for upload files on GitHUb
+git version
+git config --global user.name Your Name
+git config --global user.email "Your Email Id"
+
+git init				[:initalize the folder using .git hidden folder]
+git add . 				[add the files to tracked stage & prepare for commit phase ]
+git commit -m "Any Message what you want to enter"
+git status				[:it shows your repository status]
+git remote add origin YOUR GITHUB profile link
+git push -u origin master
+
+
+touch .gitignore		[:those files which you include in this folder will we hide ] // For now optional
+
+
+
+
+
+====>>>>First initialize this to generate private key for make your repository private to others
+
+FOR SET-UP SSH PRIVATE KEY::::
+ssh-keygen -t rsa -b 4096 -C "Your Email Id" 		[: This command will generate a primary key path // public key has been saved in PATH]
+
+cat PATH    [:paste here above PATH which is describe in comment TO generate Private Key]
+
+
+NOW, copy above key And add to GitHub WebApp [profile icon->settings->SSH Keys->New SSH Key]
